@@ -1,0 +1,7 @@
+seeds:
+  - name: BANCK_IFSC_CODES
+    config:
+      column_types:
+        "account ifsc": varchar(20)
+        "account customer_name": varchar(10)
+
