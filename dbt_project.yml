@@ -42,6 +42,10 @@ models:
       mart:
         core:
               +materialized: table
+      salesanalysis:
+        CH10:
+          +materialized : table
+
       staging:
                +materialized: view
 

@@ -1,0 +1,11 @@
+version : 2
+
+sources:
+  - name: SS
+    database: CH10
+    schema: SS
+    tables:
+       - name: CUSTOMER
+       - name: ORDERS
+       - name: PRODUCT
+       - name: RETURN
