@@ -7,3 +7,9 @@ sources:
     tables:
       - name: CUSTOMER
       - name: ORDERS
+
+  - name: snap
+    database: CH19
+    schema: LANDING
+    tables:
+      - name: ORDERS

@@ -1,0 +1,8 @@
+version : 2
+
+sources:
+    - name : check
+      database : CH10
+      schema : RAW
+      tables :
+      - name : employee_details

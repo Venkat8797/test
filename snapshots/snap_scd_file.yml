@@ -1,0 +1,16 @@
+snapshots:
+  - name: orders_scd_type_changes
+    relation: source('snap', 'ORDERS')
+    config:
+      unique_key : ORDER_ID
+      database: CH19
+      schema: LANDING_SNAPSHOT
+      strategy: timestamp
+      updated_at: updated_at
+      dbt_valid_to_current: "to_date('9999-12-31')"
+      snapshot_meta_column_names:
+        dbt_valid_from: scd_start_date
+        dbt_valid_to: scd_end_date
+        dbt_scd_id: scd_id
+        dbt_updated_at: modified_at
+        dbt_is_deleted: is_deleted
